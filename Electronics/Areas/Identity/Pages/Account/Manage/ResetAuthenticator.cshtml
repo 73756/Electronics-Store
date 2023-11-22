@@ -8,17 +8,17 @@
 <partial name="_StatusMessage" for="StatusMessage" />
 <h4>@ViewData["Title"]</h4>
 <div class="alert alert-warning" role="alert">
-    <p>
-        <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</strong>
-    </p>
-    <p>
-        This process disables 2FA until you verify your authenticator app.
-        If you do not complete your authenticator app configuration you may lose access to your account.
-    </p>
+   <p>
+    <span class="glyphicon glyphicon-warning-sign"></span>
+    <strong>Se você redefinir a chave do seu autenticador, seu aplicativo de autenticação não funcionará até que você o reconfigure.</strong>
+</p>
+<p>
+    Esse processo desativa a autenticação de dois fatores (2FA) até que você verifique novamente o seu aplicativo autenticador.
+    Se você não concluir a configuração do seu aplicativo autenticador, poderá perder o acesso à sua conta.
+</p>
 </div>
 <div>
     <form id="reset-authenticator-form" method="post" class="form-group">
-        <button id="reset-authenticator-button" class="btn btn-danger" type="submit">Reset authenticator key</button>
+        <button id="reset-authenticator-button" class="btn btn-danger" type="submit">Redefinir chave do autenticador</button>
     </form>
 </div>

@@ -20,7 +20,7 @@
         <h2>@Model.Product.ProductName</h2>
         <div class="py-3">
             <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
-                <i class="fas fa-money-bill-wave"></i> Buy Now
+                <i class="fas fa-money-bill-wave"></i> Comprar Agora
             </button>
             @if (User.Identity.IsAuthenticated)
             {
@@ -36,9 +36,9 @@
 <hr style="width:70%;align-self:center" class="m-5 mx-auto" />
 <div>
     <div class="row p-2 px-3">
-        <h3>You May Also Want To See :</h3>
+        <h3>Você também pode querer ver :</h3>
         <div class="ml-auto">
-            <a class="btn btn-outline-danger" asp-page="/Products" asp-route-categoryid="@Model.Product.CategoryID">See All In @Model.Product.Category.CategoryName</a>
+            <a class="btn btn-outline-danger" asp-page="/Products" asp-route-categoryid="@Model.Product.CategoryID">Ver Tudo @Model.Product.Category.CategoryName</a>
         </div>
     </div>
     <div class="row">
